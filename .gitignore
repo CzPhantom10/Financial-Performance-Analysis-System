@@ -1,0 +1,95 @@
+# =============================================================================
+# Python
+# =============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+
+# Testing & coverage
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+*.cover
+
+# Type checking
+.mypy_cache/
+.dmypy.json
+
+# =============================================================================
+# Project-specific
+# =============================================================================
+
+# Generated database (rebuilt by pipeline)
+data/finance.db
+
+# Generated pipeline artefacts (rebuilt by run_pipeline.py)
+data/raw/
+data/processed/
+reports/kpi_summary.json
+reports/statistical_analysis.json
+reports/timeseries_analysis.json
+reports/anomaly_report.json
+reports/sql_results/
+reports/figures/
+reports/business_insights_report.md
+
+# Keep screenshots committed (used in README)
+!reports/screenshots/
+
+# Environment variables
+.env
+.env.*
+
+# =============================================================================
+# Node / Frontend
+# =============================================================================
+frontend/node_modules/
+
+# Keep the pre-built dist so Python API can serve it without Node
+# (comment this out if you prefer not to commit the build)
+# frontend/dist/
+
+# Vite cache
+frontend/.vite/
+
+# =============================================================================
+# Editors & OS
+# =============================================================================
+
+# VS Code
+.vscode/
+
+# JetBrains IDEs
+.idea/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Jupyter
+.ipynb_checkpoints/
+
+# =============================================================================
+# Claude IDE
+# =============================================================================
+.claude/
