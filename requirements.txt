@@ -1,0 +1,32 @@
+# Financial Performance & Profitability Analytics System
+# Python 3.12 recommended.  Install with:  pip install -r requirements.txt
+
+# --- data handling -------------------------------------------------------
+pandas>=2.2
+numpy>=1.26
+
+# --- statistics ----------------------------------------------------------
+scipy>=1.12
+statsmodels>=0.14
+
+# --- database ------------------------------------------------------------
+SQLAlchemy>=2.0
+# SQLite ships with Python, so no driver is needed for the default setup.
+# To run the identical pipeline against a server instead, install one of:
+#   psycopg2-binary>=2.9     # PostgreSQL
+#   PyMySQL>=1.1             # MySQL
+# then set FINANCE_DB_URL (see README).
+
+# --- visualisation -------------------------------------------------------
+matplotlib>=3.8
+
+# --- dashboard backend ---------------------------------------------------
+fastapi>=0.110
+uvicorn>=0.27
+
+# --- notebook ------------------------------------------------------------
+nbformat>=5.9
+ipykernel>=6.29
+
+# --- tests ---------------------------------------------------------------
+pytest>=8.0
